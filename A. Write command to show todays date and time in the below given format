@@ -1,0 +1,19 @@
+i.) DD/MM/YYYY EG: 30/01/2018 
+$date +"%d/%m/%Y" 
+13/03/2017 
+
+ii.) DAY, MONTH DATE EG: Wednesday , January 30 
+$date +"%A,%B %d" 
+Thursday, March 13 
+
+iii.) DAY DD/MM/YY EG: Wednesday 01/30/13 
+$date +"%A %d/%m/%y" 
+Thursday 13/03/14 
+
+iv.) HH:MM:SS EG: 10:30:20 
+$date +"%T" 
+10:32:13 
+
+v.) HH:MM AM/PM EG: 10:30 AM 
+$date +"%R %p" 
+10:38 AM
