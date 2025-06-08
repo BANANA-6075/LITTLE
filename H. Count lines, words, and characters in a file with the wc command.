@@ -1,0 +1,2 @@
+wc -lwc file1 
+11 33 229 file1
