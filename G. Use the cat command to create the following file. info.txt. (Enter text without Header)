@@ -1,0 +1,52 @@
+Use the cat command to create the following file. info.txt. (Enter text without Header) 
+ 
+ID    Hr_rate Hrs_worked 
+1420  12.56   45 
+3278  14.56   22 
+5671  22.54   29 
+3219  56.7    12 
+7234  32.44   30 
+4321  25.09   56 
+9234  41.22   19
+
+cat > info.txt 
+1420 12.56 45 
+3278 14.56 22 
+5671 22.54 29 
+3219 56.7 12 
+7234 32.44 30 
+4321 25.09 56 
+9234 41.22 19
+
+
+a. Use a command to show number of workers. 
+wc -l info.txt 
+7 info.txt 
+
+b. sort the file based on ID & save as S1,txt 
+sort -k1 info.txt > s1.txt 
+1420 12.56 45 
+3219 56.7 12 
+3278 14.56 22 
+4321 25.09 56 
+5671 22.54 29 
+7234 32.44 30 
+9234 41.22 19 
+
+c. show the worker who is paid the highest hourly rate. 
+sort -rk2 info.txt | cut -d ' ' -f1 | head -1 
+3219 
+
+d. Use a command to show the worker ID who worked more than anybody. 
+sort -rk3 info.txt | cut -d ' ' -f1 | head -1 
+4321 
+
+e. Sort the file based on HR_rate and save as S2.txt. 
+sort -k2 info.txt > s2.txt 
+
+f. Use a command merge the files created on step b and e. call it as S.txt 
+cat s1.txt s2.txt > s.txt 
+
+g. Reverse the file line by line. Last line becomes first line and second last line becomes second and 
+so on. Call it as info_rev.txt 
+tac info.txt > info_rev.txt
