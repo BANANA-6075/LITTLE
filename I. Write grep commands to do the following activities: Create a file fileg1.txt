@@ -1,0 +1,23 @@
+a. To select the lines from a file that has exactly two characters. 
+grep "^..$" sample 
+if 
+
+
+b. To select the lines from a file that start with the upper case letter. 
+grep "[A-Z]*" sample 
+How 
+Fine 
+Shibin 
+
+
+c. To select lines from a file that has at least three characters. 
+grep "^..." sample 
+hai naveen 
+Fine 
+Think
+
+
+d. To select lines from a file that has at least two digits without any other characters in between. 
+grep "[0-9][0-9]" sample 
+u 23 
+2er334 thnk
