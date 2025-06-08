@@ -1,0 +1,102 @@
+$ mkdir letters 
+$ mkdir reports 
+$ mkdir assignments 
+
+a. Move to the directory letters. 
+$ cd letters 
+
+
+b. Create two directories friendly and formal under the directory letters. 
+$ mkdir friendly 
+$ mkdir formal 
+
+
+c. Move to directory reports. Using single command. 
+$ cd ~/lab/reports 
+
+
+d. Create a directory UNIX under assignments without moving from reports. 
+$ mkdir ~/lab/assignments/UNIX 
+
+
+e. Move to UNIX and check your current directory. 
+$ cd ~/lab/assignments/UNIX 
+$ pwd 
+Output: /home/manju/lab/assignments/UNIX 
+
+
+f. Create a file hw4 with a brief report on man,who,whoami,date.
+$ vi hw4 
+Man command is used to format and display man pages. 
+Who command is used to determine users who are currently logged in to the Linux operating 
+system. 
+Whoami command is used to display the current user name. 
+Date command is used to display the current date and time. 
+:wq 
+
+
+g. Print the content of Hw4 from your home directory. 
+$ cat assignments/UNIX/hw4 
+Output: 
+Man command is used to format and display man pages. 
+Who command is used to determine users who are currently logged in to the Linux operating 
+system. 
+Whoami command is used to display the current user name. 
+Date command is used to display the current date and time. 
+:wq 
+
+
+h. Make a copy of hw4 and store it under the same directory where hw4 is stored. 
+$ cp assignments/UNIX/hw4 assignments/UNIX/hw5 
+
+
+i. Use ls command to list the hierarchy in various formats. 
+
+$ ls -l 
+Output: 
+total 12 
+drwxr-xr-x 3 manju manju 4096 2014-03-13 22:55 assignments 
+drwxr-xr-x 4 manju manju 4096 2014-03-13 22:54 letters 
+drwxr-xr-x 2 manju manju 4096 2014-03-13 22:54 reports
+
+$ ls -a 
+Output: … 
+. assignments letters reports 
+
+$ ls -F 
+Output: 
+assignments/ letters/ reports/ 
+
+$ ls -R 
+Output: 
+.: 
+assignments letters reports 
+./assignments: 
+UNIX 
+./assignments/UNIX: 
+hw4 hw5 
+./letters: 
+formal friendly 
+./letters/formal: 
+./letters/friendly: 
+./reports: 
+
+$ ls –r 
+Output: 
+reports letters assignments 
+
+$ ls -S 
+Output: 
+assignments letters reports
+
+$ ls –A 
+Output: 
+assignments letters reports 
+ 
+ 
+j. Remove Hw4. 
+$ rm assignments/UNIX/hw4 
+ 
+ 
+k. Remove all created folder recursively from your home directory. 
+$ rm -r lab
