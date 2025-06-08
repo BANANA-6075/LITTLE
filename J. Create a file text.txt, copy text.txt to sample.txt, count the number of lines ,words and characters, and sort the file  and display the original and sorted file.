@@ -1,0 +1,26 @@
+Create a file text.txt, copy text.txt to sample.txt, count the number of lines ,words and characters, and sort the file  and display the original and sorted file.
+
+# Create text.txt
+cat > text.txt
+(Banana
+Apple
+Orange
+Mango
+
+Ctrl + D This saves the file and exits.)
+
+# Copy file
+cp text.txt sample.txt
+
+# Count lines, words, characters
+wc text.txt
+# Output will look like: 
+#  4  10  56 text.txt
+# (4 lines, 10 words, 56 characters)
+
+# Sort file and save
+sort text.txt > sorted.txt
+
+# Display original and sorted
+cat text.txt
+cat sorted.txt
