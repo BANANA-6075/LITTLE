@@ -1,0 +1,24 @@
+a.	Display date with various options 
+b.	Display list of users currently using the server 
+c.	Display your user name 
+d.	List all files and directories in current working directory 
+e.	Display home directory 
+f.	Display the only the  first 10 lines of a particular file 
+g.	Display last 6 lines of a particular file
+
+a. date           # Default date and time
+date +"%D"     # MM/DD/YY format
+date +"%T"     # HH:MM:SS format
+date +"%A"     # Day of the week
+
+b. who
+
+c. whoami
+
+d. ls -l
+
+e. echo $HOME
+
+f. head -n 10 text.txt
+
+g. tail -n 6 text.txt
