@@ -26,4 +26,4 @@ v. echo $PATH
 
 vi. echo $SHELL
 
-vii. cat /etc/shells
+vii. cat /etc/shells 
