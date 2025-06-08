@@ -1,0 +1,16 @@
+a.	Display current working directory
+b.	List all running processes 
+c.	Display current shell
+d.	Change directory to a subdirectory of current working directory
+e.	Display all files in your directory with “.c” extension.
+f.	Display primary and secondary prompt 
+g.	Display information related to terminal
+
+a.	pwd
+b.	ps aux
+c.	echo $SHELL
+d.	cd projects
+pwd
+e.	ls *.c
+f.	echo $PS1 echo $PS2
+g.	tty
