@@ -1,0 +1,29 @@
+i.	Display current working directory 
+ii.	Create a  sub directory in your home area and add 3 files 
+iii.	Change working directory 
+iv.	Delete  the subdirectory created 
+v.	Display current path settings 
+vi.	Current shell  
+vii.	all shells available
+
+i. pwd
+
+ii. cd ~                             # Move to home directory
+mkdir myfolder                       # Create a subdirectory
+cd myfolder                          # Enter the subdirectory
+touch file1.txt file2.txt file3.txt  # Create 3 empty files  cat > file1 file2 file3
+ls                                   # List to verify
+
+iii. cd ~                      # Change to home
+cd myfolder                    # Change into the created subdirectory
+pwd
+
+iv. cd ~                      # Go back to home
+rm -r myfolder                # Remove the directory and its contents
+ls                            # Confirm deletion
+
+v. echo $PATH
+
+vi. echo $SHELL
+
+vii. cat /etc/shells
